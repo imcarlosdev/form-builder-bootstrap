@@ -1,0 +1,160 @@
+/*General styles*/
+.xform{
+	border:1px solid #D7D7D7;
+	padding: 15px 10px; /*change padding form*/
+	float: left;
+	width: 100%;
+}
+.xform, .xform_field, .xform_inner, .xform_field *{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;	
+}
+
+
+/*Basic structure*/
+.xform_field, .xform_inner{
+	float: left; /*adjust for floating options in builder*/
+	width: 100%; /*adjust for floating options in builder*/
+}
+.xform_field{
+	margin-bottom: 18px;
+	position: relative;
+}
+.xform_inner{
+	padding: 0 5px; /*change padding nested*/
+}
+.half.xform_field{
+	width: 50%;
+	float: left;
+	padding: 0 5px; /*change padding nested*/
+	position: relative;
+}
+.half.xform_field .xform_inner{
+	padding: 0;
+}
+.third.xform_field{
+	width: 33.333333%;
+	float: left;
+	padding: 0 5px; /*change padding nested*/
+}
+.third.xform_field .xform_inner{
+	padding: 0;
+}
+.quarter.xform_field{
+	width: 25%;
+	float: left;
+	padding: 0 5px; /*change padding nested*/
+}
+.quarter.xform_field .xform_inner{
+	padding: 0;
+}
+
+
+/*Form elements styles*/
+.xform h1,.xform h2,.xform h3,.xform h4,.xform h5,.xform h6{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.xform label{
+	width: 100%;
+}
+
+
+
+.xform_inner[data-type="checkbox"].show_as_row label{ /*Change orientation of checkboxes as row or column*/
+	width: auto;
+	margin-right: 15px;
+}
+
+.xform_inner[data-type="radio"].show_as_row label{ /*Change orientation of checkboxes as row or column*/
+	width: auto;
+	margin-right: 15px;
+}
+
+/*Fancy custom*/
+.xform input.form-control:active, .xform input.form-control:focus,
+.xform textarea:active, .xform textarea:focus, 
+.xform select:active, .xform select:focus{
+	border: 1px solid #CCCCCC;
+	box-shadow: 0 0 3px rgba(0,0,0,0.30) inset;
+}
+
+
+
+
+/*==================================================
+=                  Media Queries                   =
+====================================================*/
+
+/* Tablet, ipad portrait 768px */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	/*Basic structure*/
+	.xform{
+		width: 100% !important;
+		margin: 0 !important;
+	}
+	.half.xform_field{
+		width: 50%;
+	}
+	.third.xform_field{
+		width: 33.333333%;
+	}
+	.quarter.xform_field{
+		width: 50%;
+	}    
+}
+
+/* Tablet, ipad landscape 1024px */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) { 
+	/*Basic structure*/
+	.xform{
+		width: 100% !important;
+		margin: 0 !important;
+	}
+	.half.xform_field{
+		width: 50%;
+	}
+	.third.xform_field{
+		width: 33.333333%;
+	}
+	.quarter.xform_field{
+		width: 50%;
+	}
+}
+
+/* Mobile portrait ancho 300px */
+@media only screen and (max-width: 767px) {
+	/*Basic structure*/
+	.xform{
+		width: 100% !important;
+		margin: 0 !important;
+	}
+	.half.xform_field{
+		width: 100%;
+	}
+	.third.xform_field{
+		width: 100%;
+	}
+	.quarter.xform_field{
+		width: 100%;
+	}
+}
+
+/* Mobile landscape ancho 420px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	/*Basic structure*/
+	.xform{
+		width: 100% !important;
+		margin: 0 !important;
+	}
+	.half.xform_field{
+		width: 50%;
+	}
+	.third.xform_field{
+		width: 100%;
+	}
+	.quarter.xform_field{
+		width: 100%;
+	}
+}
