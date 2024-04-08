@@ -39,6 +39,17 @@
 	z-index: 10;
 	top: 0;
 	left: 0;
+	cursor: grab;
+}
+
+.ui-draggable-dragging{
+	width: 110px !important;
+	height: 65px !important;
+	box-sizing: border-box !important;
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+	border-radius: 2px;
+	overflow: hidden;
+	z-index: 100;
 }
 
 
